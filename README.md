@@ -17,7 +17,6 @@ example/squalid.js: line 5, col 8, Warning - 恥ずかしい'taboo'禁止!
 1 problem
 ```
 
-
 ## Documentation
 
 This example project contain
