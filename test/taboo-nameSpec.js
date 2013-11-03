@@ -21,7 +21,7 @@ describe("taboo-name", function () {
         });
     });
     context("when evaluating no problem code", function () {
-        it("should report a violation", function () {
+        it("should not report a violation", function () {
             var config = { rules: {} };
             config.rules[RULE_ID] = [1, tabooName];
 
