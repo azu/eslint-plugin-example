@@ -5,7 +5,7 @@
 ```sh
 git submodule update --init
 npm install
-npm install eslint
+npm install eslint/
 ```
 
 ## Usage
