@@ -7,6 +7,17 @@ git submodule update --init
 npm install
 npm install eslint
 ```
+
+## Usage
+
+```sh
+$ eslint -c example/config.json --rulesdir plugin example/squalid.js
+example/squalid.js: line 5, col 8, Warning - 恥ずかしい'taboo'禁止!
+
+1 problem
+```
+
+
 ## Documentation
 
 This example project contain

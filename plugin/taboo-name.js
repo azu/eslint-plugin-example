@@ -9,10 +9,10 @@ module.exports = function (context) {
 
     var checkForLoops = function (node) {
         var name = node.name;
-        context.options.forEach(function (checkLiteral) {
-            if (checkLiteral.test(name)) {
-                context.report(node, "恥ずかしい'{{name}}'禁止!",{
-                    name : name
+        context.options.forEach(function (tabooName) {
+            if (name.indexOf(tabooName) !== -1) {
+                context.report(node, "恥ずかしい'{{name}}'禁止!", {
+                    name: name
                 });
             }
         });
