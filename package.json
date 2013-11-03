@@ -1,47 +1,48 @@
 {
-  "name": "eslint-plugin-example",
-  "description": "eslint rules example.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/azu/eslint-plugin-example",
-  "author": {
-    "name": "azu",
-    "email": "azuciao@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/azu/eslint-plugin-example.git"
-  },
-  "bugs": {
-    "url": "https://github.com/azu/eslint-plugin-example/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/azu/eslint-plugin-example/blob/master/LICENSE-MIT"
-    }
-  ],
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "dependencies": {
-    "eslint": "0.1.0-dev"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.1",
-    "mocha": "~1.13.0",
-    "chai": "~1.8.1",
-    "grunt-mocha": "~0.4.1",
-    "grunt-mocha-test": "~0.7.0"
-  },
-  "keywords": [
-    "Esprima",
-    "AST",
-    "lint"
-  ]
+    "name": "eslint-plugin-example",
+    "description": "eslint rules example.",
+    "version": "0.1.0",
+    "homepage": "https://github.com/azu/eslint-plugin-example",
+    "author": {
+        "name": "azu",
+        "email": "azuciao@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/azu/eslint-plugin-example.git"
+    },
+    "bugs": {
+        "url": "https://github.com/azu/eslint-plugin-example/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/azu/eslint-plugin-example/blob/master/LICENSE-MIT"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "scripts": {
+        "preinstall": "git submodule foreach 'npm install || :'",
+        "test": "grunt test"
+    },
+    "dependencies": {
+        "eslint": "0.1.0-dev"
+    },
+    "devDependencies": {
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt": "~0.4.1",
+        "mocha": "~1.13.0",
+        "chai": "~1.8.1",
+        "grunt-mocha": "~0.4.1",
+        "grunt-mocha-test": "~0.7.0"
+    },
+    "keywords": [
+        "Esprima",
+        "AST",
+        "lint"
+    ]
 }

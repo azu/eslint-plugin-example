@@ -5,7 +5,6 @@
 ```sh
 git submodule update --init
 npm install
-npm install eslint/
 ```
 
 ## Usage
@@ -16,6 +15,7 @@ example/squalid.js: line 5, col 8, Warning - 恥ずかしい'taboo'禁止!
 
 1 problem
 ```
+
 
 alt. ``./node_modules/eslint/bin/eslint.js -c example/config.json --rulesdir plugin example/squalid.js``
 
